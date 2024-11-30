@@ -29,6 +29,9 @@ Usage :
 
 After the setup you can simply type "wther" into the terminal and the program will execute 
 
+![2024-11-30-132030_hyprshot](https://github.com/user-attachments/assets/24da94c0-d9d7-4ea8-a977-c50c369d4ad2)
+
+
 
 
 
