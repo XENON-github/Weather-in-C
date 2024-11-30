@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc weather.c -o "weather" -lcurl -lcjson
+./weather
