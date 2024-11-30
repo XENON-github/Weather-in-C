@@ -22,4 +22,14 @@ After signing up you can get your api key.
 After you have your api key you can copy it to the "weather.c" file 
 ![2024-11-30-120118_hyprshot](https://github.com/user-attachments/assets/eac399a5-5a13-4281-b20d-7667a6230bed)
 
+Copy the "wther" and "weather.c" files to /usr/local/bin or equivalent
+
+
+Usage :
+
+After the setup you can simply type "wther" into the terminal and the program will execute 
+
+
+
+
 
