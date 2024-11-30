@@ -19,8 +19,7 @@ After signing up you can get your api key.
 ![2024-11-30-112219_hyprshot](https://github.com/user-attachments/assets/121ba0ea-4b8d-45ae-98bc-0dd8fb89e179)
 
 
-After you have your api key you can copy it to the "weather.c" file 
-![2024-11-30-120118_hyprshot](https://github.com/user-attachments/assets/eac399a5-5a13-4281-b20d-7667a6230bed)
+After you have your api key you can copy it to the "weather.c" file ![2024-11-30-140513_hyprshot](https://github.com/user-attachments/assets/23d27aeb-7f70-480f-8a47-e20bd7cf94fa)
 
 Copy the "wther" and "weather.c" files to /usr/local/bin or equivalent
 
