@@ -13,8 +13,8 @@ size_t WriteCallback(void *contents, size_t size, size_t nmemb, char *output) {
 
 int main() {
     // Your OpenWeatherMap API key and city
-    const char *api_key = "23ea5e2cebbdad4bc02ee8cbda8bfc43";
-    const char *city = "Kathmandu";
+    const char *api_key = "your_api_key_here";
+    const char *city = "your_city_here";
     char url[256];
 
     // Construct the URL for the API request
