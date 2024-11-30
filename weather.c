@@ -11,10 +11,28 @@ size_t WriteCallback(void *contents, size_t size, size_t nmemb, char *output) {
     return realsize;
 }
 
+// Function to print the weather data in a vertically long table format
+void print_vertical_table(const char *city_name, double temperature, double temp_min, int humidity, const char *description) {
+    // Print the table header
+    printf("+---------------------+---------------------------+\n");
+    printf("| %-19s | %-25s |\n", "Attribute", "Value");
+    printf("+---------------------+---------------------------+\n");
+
+    // Print each row of data
+    printf("| %-19s | %-25s |\n","City", city_name);
+    printf("| %-19s  |%-25.2f  |\n","Current Temp(°C)", temperature);
+    printf("| %-19s  |%-25.2f  |\n","Min Temp(°C)", temp_min);
+    printf("| %-19s |%-25d  |\n","Humidity(%)", humidity);
+    printf("| %-19s | %-25s |\n","Description", description);
+
+    // Print the table footer
+    printf("+---------------------+---------------------------+\n");
+}
+
 int main() {
     // Your OpenWeatherMap API key and city
-    const char *api_key = "your_api_key_here";
-    const char *city = "your_city_here";
+    const char *api_key = "23ea5e2cebbdad4bc02ee8cbda8bfc43";
+    const char *city = "Kathmandu";
     char url[256];
 
     // Construct the URL for the API request
@@ -62,13 +80,8 @@ int main() {
                 const char *description = cJSON_GetObjectItemCaseSensitive(weather, "description")->valuestring;
                 const char *city_name = name->valuestring;
 
-                // Display the weather information
-                printf("\n\n");
-                printf("Weather in %s:\n", city_name);
-                printf("Current Temperature: %.2f°C\n", temperature);
-                printf("Min Temperature: %.2f°C\n", temp_min);
-                printf("Humidity: %d%%\n", humidity);
-                printf("Description: %s\n", description);
+                // Print the weather information in a vertically long table format
+                print_vertical_table(city_name, temperature, temp_min, humidity, description);
             } else {
                 printf("Failed to extract data from JSON.\n");
             }
