@@ -31,8 +31,8 @@ void print_vertical_table(const char *city_name, double temperature, double temp
 
 int main() {
     // Your OpenWeatherMap API key and city
-    const char *api_key = "23ea5e2cebbdad4bc02ee8cbda8bfc43";
-    const char *city = "Kathmandu";
+    const char *api_key = "You_api_key_here;
+    const char *city = "your_city_here";
     char url[256];
 
     // Construct the URL for the API request
